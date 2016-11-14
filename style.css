@@ -17,16 +17,17 @@
 #wrapper > main{
 	width: 65%;
 	float: right;
+	height: 570px;
 }
 #create-drawing{
 	height: 120px;
 	text-align: center;
 }
 #drawing{
-	height: 250px;
-}
-#exterior-transform{
 	height: 300px;
+}
+#exterior{
+	height: 150px;
 }
 #wrapper > aside > section > h1{
 	height: 40px;
@@ -45,10 +46,10 @@
 	height: 35px;
 	line-height: 35px;
 }
-#exterior-transform > article,#drawing > article{
+#exterior > article,#drawing > article{
 	padding: 10px 20px;
 }
-#exterior-transform > article > div{
+#exterior > article > p,#drawing > article > p{
 	height: 40px;
 	line-height: 40px;
 }
