@@ -3,7 +3,8 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     concat = require('gulp-concat'),     //合并js文件
     uglify = require('gulp-uglify'),     
-    cssmin = require('gulp-minify-css');
+    cssmin = require('gulp-minify-css'),
+    htmlmin = require('gulp-htmlmin');
 
 
 gulp.task('autoreload',function(){
@@ -36,7 +37,7 @@ gulp.task('autoreload',function(){
 	    	keepSpecialComments: '*'   //保留所有特殊前缀，当你用autoprefixer生成的浏览器前缀，如果不加这个参数，有可能会被部分删除
 	    }))
 	    .pipe(gulp.dest('dist'));
-}).task('htmlmin',['autoreload']function(){
+}).task('htmlmin',['autoreload'],function(){
 	var options = {
 		removeComments: true,
 		collapseWhitespace: true,   //压缩html

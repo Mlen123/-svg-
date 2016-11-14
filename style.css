@@ -1,0 +1,54 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+#wrapper{
+	width: 90%;
+	margin: 20px auto 10px auto;
+	border: 1px solid #cfcfcf;
+	overflow: hidden;
+}
+#wrapper > aside{
+	width: 35%;
+	border-right: 1px solid #cfcfcf;
+	float: left;
+}
+#wrapper > main{
+	width: 65%;
+	float: right;
+}
+#create-drawing{
+	height: 120px;
+	text-align: center;
+}
+#drawing{
+	height: 250px;
+}
+#exterior-transform{
+	height: 300px;
+}
+#wrapper > aside > section > h1{
+	height: 40px;
+	line-height: 40px;
+	background: #cfcfcf;
+	padding: 0 10px;
+	text-align: left;
+}
+#create-drawing > article{
+	display: inline-block;
+	padding: 20px 0;
+	width: 100%;
+}
+#create-drawing > article > button{
+	width: 20%;
+	height: 35px;
+	line-height: 35px;
+}
+#exterior-transform > article,#drawing > article{
+	padding: 10px 20px;
+}
+#exterior-transform > article > div{
+	height: 40px;
+	line-height: 40px;
+}
